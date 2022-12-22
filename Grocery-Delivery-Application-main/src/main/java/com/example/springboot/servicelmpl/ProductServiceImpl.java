@@ -38,7 +38,7 @@ public class ProductServiceImpl  implements ProductService{
 		existingProduct.setProductname(product.getProductname());
 		//existingProduct.setPrice(product.getPrice());
 		existingProduct.setMrpPrice(product.getMrpPrice());
-		//existingProduct.setImage(product.getImage());
+		existingProduct.setImage(product.getImage());
 		existingProduct.setDescription(product.getDescription());
 		existingProduct.setQuantity(product.getQuantity());
 		//existingProduct.setCartId(product.getCartId());
