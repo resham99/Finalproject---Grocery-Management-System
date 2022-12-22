@@ -1,0 +1,11 @@
+h1{
+  text-align: center;
+
+  color: blue;
+}
+.body{
+background: url("../../../../assets/images/admin-background") no-repeat center center;
+  background-size: cover;
+  height: 300vh;
+  width: 300vh;
+}

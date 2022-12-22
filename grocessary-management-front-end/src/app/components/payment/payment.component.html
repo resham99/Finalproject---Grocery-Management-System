@@ -1,0 +1,62 @@
+<!-- <div *ngIf="paymentList.length>0"><table border="1">
+  <tr>
+  <th>payment Id</th>
+  <th>Total price</th>
+  <th>Order Id</th>
+  <th>nameOnCard</th>
+  <th>cardNumber</th>
+  <th>expYear</th>
+  <th>cvv</th>
+  <th>PaidDate</th>
+  <th>paidAmount</th>
+
+  </tr>
+  <tr *ngFor="let payment of paymentList">
+    <td>{{payment?.paymentId}}</td>
+    <td>{{payment?.totalPrice}}</td>
+      <td>{{payment?.orderId}}</td>
+      <td>{{payment?.nameOnCard}}</td>
+      <td>{{payment?.cardNumber}</td>
+      <td>{{payment?.expYear}}</td>
+      <td>{{payment?.cvv}}</td>
+      <td>{{getDate(payment?.paidDate)}}</td>
+      <td>{{payment?.paidAmount}}</td>
+  </tr>
+</table>
+</div> -->
+
+<h1 style="text-align: center;">Payment</h1>
+
+<table class="table table-hover table-white">
+
+    <tr>
+        <td>Name On the Card</td>
+        <td>
+            <input type="text" [(ngModel)]="nameOnCard"/>
+        </td>
+    </tr>
+    <tr>
+        <td>Card Number</td>
+        <td>
+            <input type="text" [(ngModel)]="cardNumber"/>
+        </td>
+    </tr>
+    <tr>
+        <td>Exp year on card</td>
+        <td>
+            <input type="text" [(ngModel)]="expYear"/>
+        </td>
+    </tr>
+    <tr>
+        <td>cvv</td>
+        <td>
+            <input type="number" [(ngModel)]="cvv"/>
+        </td>
+    </tr>
+
+    <tr>
+      <td colspan="2" class="button">
+          <button (click)="paymentList()">Make Payment</button>
+      </td>
+  </tr>
+</table>

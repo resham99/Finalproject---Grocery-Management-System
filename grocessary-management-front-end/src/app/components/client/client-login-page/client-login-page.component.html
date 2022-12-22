@@ -1,0 +1,38 @@
+<!--
+<div class="main">
+    <h1>Client SignIn</h1>
+    <div class="item-icon">
+       <div class="icon">
+        </div><input type="text" [(ngModel)]="email" placeholder="Email">
+    </div>
+    <br />
+    <div class="item-icon">
+        <div class="icon">
+         </div><input type="password" [(ngModel)]="password" placeholder="Password">
+     </div>
+     <br />
+    <div>
+        <button (click)="signIn()">SignIn</button>
+    </div>
+    <br><br> -->
+
+    <div class="login-wrapper">
+      <form action="" class="form">
+        <h2>Client Login</h2>
+        <div class="input-group">
+          <input type="text" name="loginUser" [(ngModel)]="email" id="loginUser" required />
+          <label for="loginUser">User Name</label>
+        </div>
+        <div class="input-group">
+          <input
+            type="password"
+            [(ngModel)]="password"
+            name="loginPassword"
+            id="loginPassword"
+            required
+          />
+          <label for="loginPassword">Password</label>
+        </div>
+        <input type="submit" value="Login" (click)="signIn()" class="submit-btn" />
+      </form>
+    </div>

@@ -1,0 +1,21 @@
+.main
+{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    background-color: rgb(39, 28, 28);
+    align-items: center;
+    color: white;
+}
+.main > .selected {
+    background: burlywood;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 0 10px 0 10px;
+}
+
+.main div
+{
+    cursor: pointer;
+}

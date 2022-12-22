@@ -1,0 +1,33 @@
+<!-- <div class="main">
+    <h1>Admin SignIn</h1>
+
+    <div class="item-icon">
+       <div class="icon">
+        </div><input type="text" [(ngModel)]="email" placeholder="Email">
+    </div>
+    <br />
+    <div class="item-icon">
+       <div class="icon"></div><input type="password" [(ngModel)]="password" placeholder="Password">
+    </div>
+    <br />
+    <div>
+        <button (click)="signIn()" >SignIn</button>
+    </div>
+</div> -->
+
+  <div class="background">
+      <div class="shape"></div>
+      <div class="shape"></div>
+  </div>
+  <form>
+      <h3>Admin Login</h3>
+
+      <label for="username">Email</label>
+      <input type="text" [(ngModel)]="email" placeholder="Enter your email" name="email" id="email" >
+
+      <label for="password">Password</label>
+      <input type="password" [(ngModel)]="password" placeholder="Enter your password" name="password" id="password" >
+
+      <button (click)="signIn()">Log In</button>
+
+  </form>
